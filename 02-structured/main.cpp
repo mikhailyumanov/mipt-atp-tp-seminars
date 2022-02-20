@@ -1,5 +1,5 @@
 #include "print.hpp"
 
 int main() {
-  print("Subprojects");
+  print("Pretty project");
 }
