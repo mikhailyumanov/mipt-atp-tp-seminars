@@ -6,7 +6,7 @@ project(OptionsExample
   LANGUAGES CXX
   )
 
-option(USE_PRINT "Use out print" ON)
+option(USE_PRINT "Use our print" ON)
 if (USE_PRINT)
   add_definitions(-DUSE_PRINT)
 endif(USE_PRINT)
