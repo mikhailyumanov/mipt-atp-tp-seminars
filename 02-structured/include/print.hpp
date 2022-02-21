@@ -2,4 +2,4 @@
 
 #include <string>
 
-extern void print(std::string s);
+void print(std::string s);

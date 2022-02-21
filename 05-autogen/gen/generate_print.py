@@ -25,7 +25,7 @@ header_template = """#pragma once
 """
 
 for i in data:
-    header_template += f"""extern void print_{i}(std::string s);
+    header_template += f"""void print_{i}(std::string s);
 
 """
 
