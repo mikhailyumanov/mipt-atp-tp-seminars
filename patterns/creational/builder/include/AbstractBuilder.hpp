@@ -4,8 +4,12 @@
 
 
 class AbstractBuilder {
- public:
-  virtual Pizza GetPizza() const = 0;
+  void PreparePizza();
 
-  // YOUR CODE HERE
+  virtual void SetHam() = 0;
+  virtual void SetCheese() = 0;
+  virtual void SetMushrooms() = 0;
+  virtual void SetGreenery() = 0;
+  virtual void SetBacon() = 0;
+  virtual void SetTomatoes() = 0;
 };

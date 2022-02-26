@@ -4,10 +4,18 @@
 #include "AbstractBuilder.hpp"
 
 
-class HamMushroomPizzaBuilder {
+class HamMushroomPizzaBuilder : public AbstractBuilder {
  public:
-  HamMushroomPizza GetPizza() const override;
+  HamMushroomPizza GetPizza();
 
-  // YOUR CODE HERE
+  void SetHam() override;
+  void SetCheese() override;
+  void SetMushrooms() override;
+  void SetGreenery() override;
+  void SetBacon() override;
+  void SetTomatoes() override;
+
+ private:
+  HamMushroomPizza pizza;
 };
 

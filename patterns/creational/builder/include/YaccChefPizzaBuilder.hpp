@@ -4,11 +4,18 @@
 #include "AbstractBuilder.hpp"
 
 
-class YaccChefPizzaBuilder {
+class YaccChefPizzaBuilder : public AbstractBuilder {
  public:
-  YaccChefPizza GetPizza() const override;
+  YaccChefPizza GetPizza();
 
-  // YOUR CODE HERE
+  void SetHam() override;
+  void SetCheese() override;
+  void SetMushrooms() override;
+  void SetGreenery() override;
+  void SetBacon() override;
+  void SetTomatoes() override;
+
+ private:
+  YaccChefPizza pizza;
 };
-
 

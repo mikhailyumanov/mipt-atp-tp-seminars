@@ -1,9 +1,30 @@
 #include "YaccChefPizzaBuilder.hpp"
 
-YaccChefPizza YaccChefPizzaBuilder::GetPizza() const {
-  // YOUR CODE HERE
+YaccChefPizza YaccChefPizzaBuilder::GetPizza() {
+  PreparePizza();
+  return pizza;
 }
 
-// YOUR CODE HERE
+void YaccChefPizzaBuilder::SetHam() {
+  // ignore
+}
 
+void YaccChefPizzaBuilder::SetCheese() {
+  pizza.SetCheese();
+}
 
+void YaccChefPizzaBuilder::SetMushrooms() {
+  pizza.SetMushrooms();
+}
+
+void YaccChefPizzaBuilder::SetGreenery() {
+  // ignore
+}
+
+void YaccChefPizzaBuilder::SetBacon() {
+  pizza.SetBacon();
+}
+
+void YaccChefPizzaBuilder::SetTomatoes() {
+  pizza.SetTomatoes();
+}
