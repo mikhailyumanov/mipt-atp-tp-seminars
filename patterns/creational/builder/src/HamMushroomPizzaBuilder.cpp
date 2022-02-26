@@ -1,31 +1,31 @@
 #include "HamMushroomPizzaBuilder.hpp"
 
-HamMushroomPizza HamMushroomPizzaBuilder::GetPizza() const {
+HamMushroomPizza HamMushroomPizzaBuilder::GetPizza()  {
   PreparePizza();
   return pizza;
 }
 
-void YaccChefPizzaBuilder::SetHam() {
+void HamMushroomPizzaBuilder::SetHam() {
   pizza.SetHam();
 }
 
-void YaccChefPizzaBuilder::SetCheese() {
+void HamMushroomPizzaBuilder::SetCheese() {
   pizza.SetCheese();
 }
 
-void YaccChefPizzaBuilder::SetMushrooms() {
+void HamMushroomPizzaBuilder::SetMushrooms() {
   pizza.SetMushrooms();
 }
 
-void YaccChefPizzaBuilder::SetGreenery() {
+void HamMushroomPizzaBuilder::SetGreenery() {
   pizza.SetGreenery();
 }
 
-void YaccChefPizzaBuilder::SetBacon() {
+void HamMushroomPizzaBuilder::SetBacon() {
   // ignore
 }
 
-void YaccChefPizzaBuilder::SetTomatoes() {
+void HamMushroomPizzaBuilder::SetTomatoes() {
   // ignore
 }
 

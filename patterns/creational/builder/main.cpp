@@ -1,5 +1,5 @@
-#include "HamMushroomPizza.hpp"
-#include "YaccChefPizza.hpp"
+#include "HamMushroomPizzaBuilder.hpp"
+#include "YaccChefPizzaBuilder.hpp"
 
 int main() {
   auto ham_mushroom = HamMushroomPizzaBuilder().GetPizza();

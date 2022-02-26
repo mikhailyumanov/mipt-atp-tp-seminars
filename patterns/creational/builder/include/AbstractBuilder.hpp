@@ -4,6 +4,7 @@
 
 
 class AbstractBuilder {
+ public:
   void PreparePizza();
 
   virtual void SetHam() = 0;
