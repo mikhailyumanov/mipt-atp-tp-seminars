@@ -7,7 +7,10 @@ class HamMushroomPizza : public Pizza {
  public:
   void Print() const override;
 
-  // YOUR CODE HERE
+  void SetHam();
+  void SetCheese();
+  void SetMushrooms();
+  void SetGreenery();
 
  private:
   int ham_amount;

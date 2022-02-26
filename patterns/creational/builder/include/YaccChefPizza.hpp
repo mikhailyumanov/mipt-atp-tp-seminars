@@ -7,7 +7,10 @@ class YaccChefPizza : public Pizza {
  public:
   void Print() const override;
 
-  // YOUR CODE HERE
+  void SetBacon()     { bacon_amount     = 5; }
+  void SetCheese()    { cheese_amount    = 5; }
+  void SetMushrooms() { mushrooms_amount = 5; }
+  void SetTomatoes()  { tomatoes_amount  = 5; }
 
  private:
   int bacon_amount;
