@@ -1,6 +1,6 @@
 #include "YaccChefPizza.hpp"
 
-void YaccChefPizza::Print() {
+void YaccChefPizza::Print() const {
   // YOUR CODE HERE
 }
 
