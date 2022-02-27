@@ -6,7 +6,7 @@
 class IngredientsLogger {
  public:
   IngredientsLogger(IngredientsLogger& other) = delete;
-  void operator=(const IngredientsLogger&) = delete;
+  IngredientsLogger& operator=(const IngredientsLogger&) = delete;
 
   static IngredientsLogger& GetInstance();
   void Log(std::string message);
