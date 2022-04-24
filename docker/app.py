@@ -10,9 +10,10 @@ app = Flask(__name__)
 def hello():
     return 'Hello World!'
 
-@app.route('/bye')
-def bye():
-    return 'Goodbye!'
+
+#@app.route('/bye')
+#def bye():
+#    return 'Goodbye!'
 
 
 if __name__ == "__main__":
