@@ -1,2 +1,2 @@
-![python](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/python-app.yml/badge.svg)
+![python](https://github.com/mikhailyumanov/mipt-atp-tp-seminars/actions/workflows/python-app.yml/badge.svg)
 
