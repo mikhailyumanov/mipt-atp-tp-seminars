@@ -7,7 +7,7 @@ name: docker publish
 
 on:
   release:
-    types: [published]
+    types: [created]
 
 jobs:
   push_to_registry:
