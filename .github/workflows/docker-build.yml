@@ -24,4 +24,5 @@ jobs:
     - name: Test
       run: |
         docker run -dp 5000:5000 01-docker-intro
+        curl 127.0.0.1/bye
         docker/tests.sh
