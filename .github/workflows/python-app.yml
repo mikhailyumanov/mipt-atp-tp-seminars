@@ -5,7 +5,8 @@ name: python
 
 on:
   push:
-    branches: [ actions ]
+    branches: [ actions-1 ]
+    paths: "tests/**"
 
 permissions:
   contents: read
