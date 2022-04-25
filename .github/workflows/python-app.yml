@@ -15,6 +15,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    outputs:
+      tag_name: ${{ steps.tag.outputs.tag }}
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
@@ -36,6 +39,7 @@ jobs:
       run: |
         pytest tests/*
     - name: Bump version and push tag
+      id: tag
       uses: anothrNick/github-tag-action@1.36.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -54,7 +58,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
+          tag_name: ${{ needs.build.outputs.tag_name }}
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
