@@ -5,9 +5,7 @@ name: docker
 
 on:
   push:
-    branches: [ actions ]
-    paths:
-      - 'docker/**'
+    branches: [ actions-3 ]
 
 permissions:
   contents: write
