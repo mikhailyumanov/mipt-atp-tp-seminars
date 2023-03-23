@@ -1,9 +1,10 @@
 import pytest
-from branchy_sum import branchy_sum
-from very_branchy_sum import very_branchy_sum
+
+from tests.coverage.branchy_sum import branchy_sum
+from tests.coverage.very_branchy_sum import very_branchy_sum
 
 
-@pytest.mark.parametrize('a', [-1])
+@pytest.mark.parametrize('a', [-1, 0, 1])
 @pytest.mark.parametrize('b', [-1, 0, 1])
 def test_branchy_sum(a, b):
     assert branchy_sum(a, b) == a + b
