@@ -16,8 +16,8 @@ def hello():
 def get(key: str):
     if key in redis_client:
         return redis_client[key]
-    else:
-        return f"Key {key} is not found", 404
+
+    return f"Key {key} is not found", 404
 
 @app.route('/set/<string:key>/<string:value>')
 def set(key: str, value: str):
