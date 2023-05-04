@@ -3,7 +3,6 @@ import time
 from flask import Flask, abort
 from redis import Redis
 
-
 app = Flask(__name__)
 redis_client = Redis(host="redis")
 
@@ -26,5 +25,5 @@ def set(key: str, value: str):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="localhost", debug=True)
 
